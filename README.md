@@ -2,11 +2,16 @@
 
 > Lightweight [ROX Center](https://github.com/lotaris/rox-center). Aims to help developers in their daily work in the use of ROX Center. Run tests, filter tests, get real time results in your browser.
 
+## Installation
+
+```bash
+$> npm install -g minirox
+```
+
 ## Usage
 
 ```bash
-npm install
-npm start
+$> minirox
 ```
 
 Open your browser and reach [http://localhost:1337](http://localhost:1337)
@@ -19,7 +24,7 @@ url: "http://127.0.0.1:1337"
 
 ### Requirements
 
-* Node.js 0.10
+* Node.js 0.10+
 
 ## Contributing
 
