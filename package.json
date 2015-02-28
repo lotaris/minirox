@@ -1,6 +1,6 @@
 {
   "name": "minirox",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Laurent Prevost, laurent.prevost@lotaris.com",
   "description": "Light ROX Center to show results locally",
   "repository": {
@@ -27,13 +27,12 @@
     "grunt-haml": "0.3.1",
     "grunt-contrib-uglify": "0.2.0",
     "grunt-contrib-copy": "0.4.0",
-    "grunt-contrib-jasmine": "0.4.1",
     "grunt-bump": "0.0.2",
     "grunt-contrib-jshint": "0.3.0"
   },
   "dependencies": {
     "cli-color": "0.2.2",
     "node-static": "0.6.7",
-    "socket.io": "0.9.13"
+    "socket.io": "~1.3.4"
   }
 }

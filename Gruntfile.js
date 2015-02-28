@@ -78,13 +78,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-haml');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-bump');
 
-  grunt.registerTask('doc', "Clean and compile the doc", ['clean:doc', 'docker:doc']);
   grunt.registerTask('server', "Validate the server", ['jshint:server']);
   grunt.registerTask('client', "Clean, validate and build the client", ['clean:client', 'jshint:client', 'rig:client', 'uglify:client', 'compass:client', 'haml:client', 'copy:client']);
-  grunt.registerTask('all', "Run the core, test and doc tasks", ['server', 'client', 'test', 'doc']);
+  grunt.registerTask('all', "Run the core, test and doc tasks", ['server', 'client']);
 
   return grunt.registerTask('default', "Run the core tasks", ['server', 'client']);
 };
