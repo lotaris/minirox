@@ -1,9 +1,11 @@
 
+var path = require('path');
+
 var util = require('util');
 
 var nodeStatic = require('node-static');
 
-var fileServer = new nodeStatic.Server('./public');
+var fileServer = new nodeStatic.Server(path.join(__dirname, '../../', 'public'));
 
 function handler (request, response) {
 	request.on('data', function() {});
